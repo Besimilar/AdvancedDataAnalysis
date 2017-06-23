@@ -1,0 +1,10 @@
+{
+  "state": "CT",
+  "team": 3,
+  "sender": "hu.hon@husky.neu.edu",
+  "notificationEmail": "liang.g@husky.neu.edu",
+  "AWSAccess": "",
+  "AWSSecret": "",
+  "rawData": "https://s3-us-west-2.amazonaws.com/team3ctassignment1/CT_23062017_WBAN_00169.csv",
+  "cleanData": ""
+}

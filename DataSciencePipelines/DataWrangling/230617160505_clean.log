@@ -1,0 +1,13 @@
+2017-06-23 16:05:06 - INFO - S3 Connected.
+2017-06-23 16:05:14 - INFO - Reading DataSet from URL
+2017-06-23 16:05:14 - INFO - Checking Whether File Exists on S3...
+2017-06-23 16:05:14 - INFO - Calling paginated s3:list_objects with {'Bucket': 'team3ctassignment1'}
+2017-06-23 16:05:14 - INFO - Starting new HTTPS connection (1): team3ctassignment1.s3.amazonaws.com
+2017-06-23 16:05:15 - INFO - Starting Cleansing Raw DataSet
+2017-06-23 16:05:20 - INFO - DataSet Cleansing Completed
+2017-06-23 16:05:20 - INFO - Starting Upload Clean Data till Today to S3
+2017-06-23 16:05:20 - INFO - Calling s3:put_object with {'Bucket': 'team3ctassignment1', 'Body': <_io.BufferedReader name='CT_23062017_WBAN_00169_clean.csv'>, 'Key': 'CT_23062017_WBAN_00169_clean.csv'}
+2017-06-23 16:05:23 - INFO - Calling s3:put_object_acl with {'Bucket': 'team3ctassignment1', 'ACL': 'public-read', 'Key': 'CT_23062017_WBAN_00169_clean.csv'}
+2017-06-23 16:05:23 - INFO - Clean Data till Today Upload Succeed
+2017-06-23 16:05:23 - INFO - Starting new HTTPS connection (1): email.us-west-2.amazonaws.com
+2017-06-23 16:05:24 - INFO - ###### DataWrangling Finished ######

@@ -1,0 +1,16 @@
+2017-06-23 15:00:38 - INFO - S3 Connected.
+2017-06-23 15:00:38 - INFO - Calling s3:list_buckets with {}
+2017-06-23 15:00:38 - INFO - Starting new HTTPS connection (1): s3-us-west-2.amazonaws.com
+2017-06-23 15:00:39 - WARNING - Bucket(team3ctassignment1) Already Created.
+2017-06-23 15:00:47 - INFO - Reading DataSet from URL
+2017-06-23 15:00:47 - INFO - Checking Whether File Exists on S3...
+2017-06-23 15:00:47 - INFO - Calling paginated s3:list_objects with {'Bucket': 'team3ctassignment1'}
+2017-06-23 15:00:47 - INFO - Starting new HTTPS connection (1): team3ctassignment1.s3.amazonaws.com
+2017-06-23 15:00:48 - INFO - No Data on S3: Try Downloading DataSet from URL
+2017-06-23 15:00:56 - INFO - Download Completed
+2017-06-23 15:00:56 - INFO - Starting Upload Data till Today to S3
+2017-06-23 15:00:56 - INFO - Calling s3:put_object with {'Bucket': 'team3ctassignment1', 'Body': <_io.BufferedReader name='CT_23062017_WBAN_00169.csv'>, 'Key': 'CT_23062017_WBAN_00169.csv'}
+2017-06-23 15:00:56 - INFO - Resetting dropped connection: team3ctassignment1.s3.amazonaws.com
+2017-06-23 15:00:59 - INFO - Calling s3:put_object_acl with {'ACL': 'public-read', 'Bucket': 'team3ctassignment1', 'Key': 'CT_23062017_WBAN_00169.csv'}
+2017-06-23 15:00:59 - INFO - Data till Today Upload Succeed
+2017-06-23 15:00:59 - INFO - ###### DataIngestion Finished ######
