@@ -1,6 +1,15 @@
 # Docker Hub
-Name: besimilar/advanced-data-analysis:final
+1. Name: besimilar/advanced-data-analysis:final
 
+2. Docker Folder Structure:
+	* dataIngestion.py:
+		```
+		cd /Assignment1/DataIngestion
+		```
+	* wrangle.py:
+		```
+		cd /Assignment1/DataWrangling
+		```
 # Detailed Instruction
 See 1-Report_DataProcessing.docx
 
