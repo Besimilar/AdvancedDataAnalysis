@@ -1,7 +1,9 @@
 # Configuration
 1. Add your AWS key in zillow/static/config.json
 2. Unzip zillow/static/ZillowData.csv.zip
-
+3. Or Download ZillowData.csv from kaggle:
+		* https://www.kaggle.com/c/zillow-prize-1
+		* save under zillow/static/
 
 # Virtualenv
 1. Install virtualenv
@@ -37,7 +39,7 @@ Tutorial: http://flask.pocoo.org/
 	```
 2. Start application
 	```
-	$ export FLASK_APP=zillow.py
+	$ export FLASK_APP=zillow
 	$ flask run
 	```
 3. Listen to all public IPs
