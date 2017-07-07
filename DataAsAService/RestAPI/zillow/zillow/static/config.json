@@ -1,0 +1,12 @@
+{
+  "name":"ZillowData",
+  "assignNum": 2,
+  "team": 3,
+  "cleanDataFileName":"ZillowData.csv",
+  "rawDataFileName":"data.csv",
+  "AWSAccess":"",
+  "AWSSecret":"",
+  "region":"us-east-1",
+  "sender":"hu.hon@husky.neu.edu",
+  "notificationEmail":"hu.hon@husky.neu.edu"
+}
