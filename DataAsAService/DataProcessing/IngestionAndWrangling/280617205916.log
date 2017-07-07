@@ -1,0 +1,19 @@
+2017-06-28 20:59:16 - INFO - Starting Cleansing Raw DataSet
+2017-06-28 20:59:16 - INFO - DataSet Cleansing Completed
+2017-06-28 20:59:16 - INFO - S3 Connected.
+2017-06-28 20:59:16 - INFO - Calling s3:list_buckets with {}
+2017-06-28 20:59:16 - INFO - Starting new HTTPS connection (1): s3-us-west-2.amazonaws.com
+2017-06-28 20:59:17 - INFO - Calling s3:create_bucket with {'Bucket': 'team3assignment2', 'CreateBucketConfiguration': {'LocationConstraint': 'us-west-2'}}
+2017-06-28 20:59:17 - INFO - Starting new HTTPS connection (1): team3assignment2.s3.amazonaws.com
+2017-06-28 20:59:17 - INFO - Bucket(team3assignment2)Created
+2017-06-28 20:59:17 - INFO - Calling s3:put_bucket_acl with {'Bucket': 'team3assignment2', 'ACL': 'public-read'}
+2017-06-28 20:59:18 - INFO - Starting new HTTPS connection (1): team3assignment2.s3-us-west-2.amazonaws.com
+2017-06-28 20:59:18 - INFO - Bucket Set to Public
+2017-06-28 20:59:18 - INFO - Checking Whether File Exists on S3...
+2017-06-28 20:59:18 - INFO - Calling paginated s3:list_objects with {'Bucket': 'team3assignment2'}
+2017-06-28 20:59:19 - INFO - Starting Upload Data to S3
+2017-06-28 20:59:19 - INFO - Calling s3:put_object with {'Bucket': 'team3assignment2', 'Body': <_io.BufferedReader name='ZillowData.csv'>, 'Key': 'ZillowData.csv'}
+2017-06-28 20:59:19 - INFO - Calling s3:put_object_acl with {'Bucket': 'team3assignment2', 'ACL': 'public-read', 'Key': 'ZillowData.csv'}
+2017-06-28 20:59:19 - INFO - Resetting dropped connection: team3assignment2.s3.amazonaws.com
+2017-06-28 20:59:19 - INFO - Data Upload Succeed
+2017-06-28 20:59:19 - INFO - ###### DataIngestion Finished ######
