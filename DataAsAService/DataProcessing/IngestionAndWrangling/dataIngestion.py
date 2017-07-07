@@ -4,6 +4,7 @@ import json
 import datetime
 import logging
 import pandas as pd
+import scipy
 
 
 def main():
@@ -69,11 +70,6 @@ def save_logs():
     return logger
 
 
-def clean(data, fileName):
-    # Save Data to local
-    data.to_csv(fileName, sep=',', encoding='utf-8')
-
-
 def create_bucket(s3, bucketName, logger, region):
     # Create a Bucket (Name should not be uppercase)
     # Check Whether the bucket has been created
@@ -114,6 +110,33 @@ def upload_to_s3(s3, bucket, fileName, logger):
         logger.info('Data Upload Succeed')
     else:
         logger.warning('File(' + fileName + ')' + ' Already Exists on S3.')
+
+
+def clean(data, fileName):
+    # replace missing value with 0
+    print("replace missing value with 0")
+    data['basementsqft'] = data['basementsqft'].fillna(0)
+    data['fireplacecnt'] = data['fireplacecnt'].fillna(0)
+    data['calculatedbathnbr'] = data['calculatedbathnbr'].fillna(0)
+    data['garagecarcnt'] = data['garagecarcnt'].fillna(0)
+    data['garagetotalsqft'] = data['garagetotalsqft'].fillna(0)
+
+    # replace missing value with mean
+    print("replace missing value with mean")
+    data['finishedsquarefeet12'] = data['finishedsquarefeet12'].fillna(scipy.mean(data['finishedsquarefeet12']))
+    data['calculatedfinishedsquarefeet'] = data['calculatedfinishedsquarefeet'].fillna(scipy.mean(data['calculatedfinishedsquarefeet']))
+    data['fullbathcnt'] = data['fullbathcnt'].fillna(round(scipy.mean(data['fullbathcnt'])))
+    data['lotsizesquarefeet'] = data['lotsizesquarefeet'].fillna(round(scipy.mean(data['lotsizesquarefeet'])))
+
+    # replace missing value with False
+    print("replace missing value with False")
+    data['fireplaceflag'] = data['fireplaceflag'].fillna(False)
+    data['hashottuborspa'] = data['hashottuborspa'].fillna(False)
+
+    # Save Data to local
+    print("Save Data to local")
+    data.to_csv(fileName, sep=',', encoding='utf-8')
+    print("Data Saved.")
 
 
 if __name__ == '__main__':
