@@ -63,7 +63,7 @@ See 1-Report_DataProcessing.docx
 	4. Summary:
 		* Docker : docker run -it -p 8888:8888 image:version 
 		* Container : jupyter notebook --ip 0.0.0.0 --no-browser 
-		* Host : localhost:8888/tre
+		* Host : localhost:8888/tree
 
 # Docker (How to create this image by yourself)
 1. Modify the Creator:
