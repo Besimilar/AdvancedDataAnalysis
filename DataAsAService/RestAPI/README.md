@@ -2,8 +2,9 @@
 1. Add your AWS key in zillow/static/config.json
 2. Unzip zillow/static/ZillowData.csv.zip
 3. Or Download ZillowData.csv from kaggle:
-		* https://www.kaggle.com/c/zillow-prize-1
-		* save under zillow/static/
+
+	* https://www.kaggle.com/c/zillow-prize-1
+	* save under zillow/static/
 
 # Virtualenv
 1. Install virtualenv
