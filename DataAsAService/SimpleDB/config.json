@@ -2,7 +2,7 @@
   "name":"ZillowData",
   "assignNum": 2,
   "team": 3,
-  "cleanDataFileName":"simple.csv",
+  "cleanDataFileName":"ZillowData.csv",
   "rawDataFileName":"data.csv",
   "AWSAccess":"",
   "AWSSecret":"",
