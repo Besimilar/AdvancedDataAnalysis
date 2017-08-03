@@ -4,3 +4,4 @@ INFO 7390
 ## Project Oder
 1. DataSciencePipelines
 2. DataAsAService
+3. ServiceDeployment
