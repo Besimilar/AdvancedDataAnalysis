@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Classification</title>
+<style>
+div.relative {
+    position: relative;
+    left: 400px;
+}
+p.big {
+	line-height: 200%
+}
+</style>
+</head>
+<body>
+
+<div class="relative">
+<h1>Classification</h1>
+<form action="Classification_Respond" method="POST">
+<p class="big">
+<font size="4">
+	Currnet Actual UPB: <input type="text" name="current_upb" value="0"><br>
+	Current Loan Delinquency Status: 
+		<select name="delq_sts">
+		  <option value="N" selected="selected">N</option>
+		  <option value="Y">Y</option>
+		</select><br>
+	Loan Age: <input type="text" name="loan_age" value="0"><br>
+	Remaining Months to Legal Maturity: <input type="text" name="mths_remng" value="0"><br>
+	Repurchase Flag: 
+		<select name="repch_flag">
+		  <option value="N" selected="selected">N</option>
+		  <option value="O">O</option>
+		  <option value="Y">Y</option>
+		</select><br>
+	Modification Flag:
+		<select name="flag_mod">
+		  <option value="N" selected="selected">N</option>
+		  <option value="Y">Y</option>
+		</select><br>
+	Zero Balance Code: 
+		<select name="cd_zero_bal">
+		  <option value="00" selected="selected">00</option>
+		  <option value="1">1</option>
+		  <option value="3">3</option>
+		  <option value="6">6</option>
+		  <option value="9">9</option>
+		</select><br>
+	Current Interest Rate: <input type="text" name="current_int_rt" value="0"><br>
+	Non Int Brng UPB: <input type="text" name="non_int_brng_upb" value="0"><br>
+	Mi Recoveries: <input type="text" name="mi_recoveries" value="0"><br>
+	Net Sales Proceeds: <input type="text" name="net_sale_proceeds" value="0"><br>
+	Non Mi Recoveries: <input type="text" name="non_mi_recoveries" value="0"><br>
+	Expenses: <input type="text" name="expenses" value="0"><br>
+	Legal Costs: <input type="text" name="legal_costs" value="0"><br>
+	Maintenance and Preservation Costs: <input type="text" name="maint_pres_costs" value="0"><br>
+	Taxes and Insurance: <input type="text" name="taxes_int_costs" value="0"><br>
+	Miscellaneous Expenses: <input type="text" name="misc_costs" value="0"><br>
+	Actual Loss Calculation: <input type="text" name="actual_loss" value="0"><br>
+	Modification Cost: <input type="text" name="modcost" value="0"><br>
+	API key: <input type="text" name="key" value="0"><br>
+	URL: <input type="text" name="url" value="0"><br>
+	Models:
+		<select name="model">
+		  <option value="DecisionForest" selected="selected">DecisionForest</option>
+		  <option value="LogisticRegression">LogisticRegression</option>
+		  <option value="NeuralNetwork">NeuralNetwork</option>
+		</select><br>
+	<br>
+	<input type="submit">
+</font>
+</p>
+</form>
+</div>
+</body>
+</html>
